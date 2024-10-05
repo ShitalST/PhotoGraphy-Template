@@ -20,7 +20,7 @@ String email=request.getParameter("mail");
 String event=request.getParameter("state");
 
 Class.forName("com.mysql.jdbc.Driver");
-Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Photography","root","Shital2002");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Photography","username","password");
 PreparedStatement psmt=con.prepareStatement("insert into form values(?,?,?,?)");
 psmt.setString(1,name);
 psmt.setString(2,mobile);
